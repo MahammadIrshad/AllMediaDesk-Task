@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AllMediaDesk-Task</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body >
+    <script src="Part1.js"></script>
+    <script src="Part2.js"></script>
+    <script src="Part3.js"></script>
+  
+    <div style="text-align: center; border: 2px solid black; padding:20px; border-radius:20px; margin:5%; " >
+        <h1>Part 1</h1>
+      <input class="form-control" id="Part1Input" type="text" placeholder="Enter the number" >
+      <button style="margin-top:20px" class="btn btn-success" onclick="Part1()">Submit</button>
+
+      <br />
+      <br />
+      <input class="form-control" disabled id="part1Result" type="text" placeholder="Answer" />
+      
+    </div>
+    <div style="text-align: center; border: 2px solid black; padding:20px; border-radius:20px; margin:5%; ">
+      <h1>Part 2</h1>
+      <input
+      class="form-control"
+        id="task2Input"
+        type="number"
+        min="1"
+        max="1000000000000000000"
+        placeholder="Enter a number"
+      />
+      <button style="margin-top:20px" class="btn btn-success" onclick="runTask2()">Submit</button>
+
+      <br />
+      <br />
+      <input  class="form-control" disabled id="task2Result" type="text" placeholder="Answer " />
+    
+    </div>
+    <div style="text-align: center; border: 2px solid black; padding:20px; border-radius:20px; margin:5%; " >
+      <h1>Part 3</h1>
+      <input
+      
+      class="form-control"
+        id="task3Input"
+        type="text"
+        placeholder="Expression like (5x + 9 + x)."
+      />
+      <button style="margin-top:20px" class="btn btn-success" onclick="drawTask3()">Draw</button>
+      <br />
+      <br />
+      
+      <canvas id="task3Canvas" width="500" height="200"
+        style="border:1px solid #d3d3d3;">
+    Your browser does not support the canvas element.
+</canvas>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
